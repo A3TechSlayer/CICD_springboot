@@ -2,7 +2,11 @@ def gv
 pipeline {
     agent any
     tools {
+<<<<<<< HEAD
      maven  'maven'
+=======
+     maven 'maven'
+>>>>>>> 2ba084269da275a983b127fe883a88667c63bce1
     }
        environment {
            NEXUS_URL="13.41.247.78:8081"
