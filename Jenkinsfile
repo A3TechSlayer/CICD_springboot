@@ -2,7 +2,7 @@ def gv
 pipeline {
     agent any
     tools {
-     maven '3.8.6'
+     maven 'maven'
     }
        environment {
            NEXUS_URL="13.41.247.78:8081"
@@ -10,7 +10,7 @@ pipeline {
            NEXUS_PROTOCOL = "http"
            NEXUS_REPOSITORY = "devops"
            NEXUS_CREDENTIAL_ID = "nexus-user-credentials"
-           IMAGE_NAME="leithmhf/devops:${BUILD_NUMBER}"
+           IMAGE_NAME="amushi666/devops:${BUILD_NUMBER}"
         }
     stages {
         stage("init") {
